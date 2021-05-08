@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebg"
+    tools:context=".ViewParking">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/vehicle_no"
+            android:layout_width="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:inputType=""
+            android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+            android:background="@drawable/edittext_backgroiund"
+            android:layout_marginRight="10dp"
+            android:hint="Enter Vehicle Number*"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Button
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_search_black_24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <ListView
+        android:id="@+id/list_customer"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

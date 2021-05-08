@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/pagebg">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="In Time :"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/intime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:gravity="fill_vertical"
+                android:textSize="20dp"
+                android:background="@drawable/edittext_backgroiund"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="In Time*"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/outtime"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:gravity="fill_vertical"
+                android:textSize="20dp"
+                android:background="@drawable/edittext_backgroiund"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Select Out-Time*"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_green"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="calculate charges"
+                android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/fare"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/ic_rupee"
+                    android:gravity="fill_vertical"
+                    android:textSize="20dp"
+                    android:background="@drawable/edittext_backgroiund"
+                    android:layout_margin="15dp"
+                    android:hint="Fare*"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    android:inputType="number"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/save_outtime"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_green"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="save"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/closedialog"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_red"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Close"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

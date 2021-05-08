@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/background_dark"
+            android:hint="Belal Khan"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="7789495120"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewVehicleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MH06BK8489"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="2017-09-30"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewInTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="8:00:00"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textViewOutTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="9:00:00"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="80dp"/>
+        <TextView
+            android:id="@+id/textViewFare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="40"
+            android:drawableLeft="@drawable/ic_rupee"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonEditEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="50dp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_blue_dark"
+            android:text="set out time" />
+
+        <Button
+            android:id="@+id/buttonDeleteEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/pagebg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/textView"
+                    style="@android:style/Widget.Holo.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:text="Search Parking"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/parkcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="Today's Parkings :"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TableRow>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="Date :"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</TableRow>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_backgroiund"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="In Time :"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_backgroiund"
+        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_light"
+        android:text="search" />
+
+
+</TableLayout>
+                <TableLayout
+                    android:id="@+id/spacetable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp">
+                    <TableRow>
+                        <Button android:id="@+id/s1"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_width="150dp"
+                            android:text="SLOT 1"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_column="0"
+                            android:background="@drawable/vacant"/>
+
+                        <Button
+                            android:id="@+id/s2"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_column="1"
+                            android:text="SLOT 2"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/vacant" />
+                    </TableRow>
+                    <TableRow>
+                        <Button
+                            android:id="@+id/s3"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:text="SLOT 3"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:layout_column="0"
+                            android:background="@drawable/vacant"/>
+                        <Button
+                            android:id="@+id/s4"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="1"
+                            android:text="SLOT 4"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant" />
+                    </TableRow>
+                    <TableRow>
+                        <Button
+                            android:id="@+id/s5"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="0"
+                            android:text="SLOT 5"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant"/>
+                        <Button
+                            android:id="@+id/s6"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="1"
+                            android:text="SLOT 6"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant" />
+                    </TableRow>
+                    <TableRow>
+                        <Button
+                            android:id="@+id/s7"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="0"
+                            android:text="SLOT 7"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant"/>
+                        <Button
+                            android:id="@+id/s8"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="1"
+                            android:text="SLOT 8"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant" />
+                    </TableRow>
+                    <TableRow>
+                        <Button
+                            android:id="@+id/s9"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="0"
+                            android:text="SLOT 9"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant"/>
+                        <Button
+                            android:id="@+id/s10"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="10dp"
+                            android:layout_column="1"
+                            android:text="SLOT 10"
+                            android:textColor="@android:color/background_dark"
+                            android:textStyle="bold"
+                            android:background="@drawable/vacant" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_width="wrap_content"
+        android:id="@+id/navigation_view"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:itemIconTint="@color/colorPrimaryDark"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

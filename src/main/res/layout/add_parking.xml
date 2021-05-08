@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebg"
+    android:layout_gravity="center">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:background="@drawable/edittext_backgroiund"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/custname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:hint="Name*"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/edittext_backgroiund"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/custmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number*"
+                    android:textStyle="bold"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_backgroiund"
+                android:layout_margin="10dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/custvehicleno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vehicle Number*"
+                    android:textStyle="bold"
+                    android:inputType="textCapCharacters"/>
+            </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/save_parking"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_green"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="save parking" />
+
+            <Button
+                android:id="@+id/closedialog"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_red"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="Close" />
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
